@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Formulario de datos</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Roboto" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <script defer src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <link href="css/estilos.css" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script defer src="js/variables.js"></script>
+        <script defer src="js/eventosformulario.js"></script>
+        <script defer src="js/conectividad.js"></script>
+        <script defer src="js/eventos.js"></script>
+       
+    </head>
+    <body>
+        <h1>Formulario</h1>
+        <div id="formulario">            
+            <form action="#" method="post" enctype="">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" placeholder="Nombre completo" onkeypress="capturarEnter(event)" tabindex="0" required>
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" placeholder="Número de teléfono" tabindex="1" required>
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" placeholder="Correo electrónico" tabindex="2" required>
+            <!--<label for="url">Perfil de Linkedin</label>
+            <input type="url" id="url" placeholder="Perfil de Linkedin" tabindex="3"> -->
+            <label for="seleccion">hola !</label>
+            <select name="seleccion" id="seleccion"></select>
+            <br>
+            <br>
+            <input type="submit" id="btnEnviar" class="btn blue white-text right" value="Enviar" tabindex="4">
+            </form>
+            
+        </div>
+    </body>
+</html> 
